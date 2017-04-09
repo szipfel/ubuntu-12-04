@@ -5,8 +5,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 # Install packages.
 RUN apt-get update
 RUN apt-get install -y vim git apache2 php5 curl wget \
-php5-gd php5-dom php5-curl php5-mbstring php7.0-bz2 \
-libapache2-mod-php5 supervisor unzip composer php-mysql
+supervisor unzip php5-mysql
 
 RUN apt-get clean
 
